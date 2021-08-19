@@ -1,13 +1,14 @@
 public class SnakeLadder{
     public static void main(String[] args) {
         int pos=0;
-        int die,count=0;
+        int die,count=0,dicecount=0;
         int[] ladder=new int[]{5,33,55,23,87,90};
         int[] snake=new int[]{4,77,80,49};
         while(count<=100)
         {
 
         die =(int) ((Math.random() * (6 - 1)) + 1);
+        dicecount++;
         System.out.println("your die number is "+die);
         for (int i=0;i<ladder.length;i++)
         {
@@ -36,7 +37,7 @@ public class SnakeLadder{
         }
         
         }
-        System.out.println("you won");
+        System.out.println("you won and number dice thrown are "+dicecount);
 
     }
 }

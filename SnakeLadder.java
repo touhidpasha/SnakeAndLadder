@@ -30,6 +30,10 @@ public class SnakeLadder{
         }
         count=count+die;
         System.out.println("your total count is "+count);
+        if (count==100)
+        {
+            System.out.println("you got exact 100 points");
+        }
         
         }
         System.out.println("you won");
